@@ -8,6 +8,8 @@ import Contato from './pages/contato/contatos';
 import Utens from './pages/utens/utens';
 import Cabecalho from './pages/cabegalho/cabegalho';
 import Footer from './pages/footer/footer';
+import Adm from './pages/adm/adm'
+
 
 const App = () => {
   return (
@@ -20,6 +22,7 @@ const App = () => {
         <Route path="/produtos" element={<Produtos />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/Utensílios" element={<Utens />} />
+        <Route path="/Adm" element={<Adm />} />
       </Routes>
   <Footer/>
     </Router>

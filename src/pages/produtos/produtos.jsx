@@ -4,10 +4,7 @@ import bolo from '../image/bolo.jpeg';
 import chocolate from '../image/bolo da vo do break.jpg';
 import individuais from '../image/Doces Individuais.jpg';
 import combo from '../image/Combo de Festas.jpg';
-import boloi from '../image/Pão de mel.jpeg';
-import chocolateg from '../image/pã';
-import individuaisf from '../image/Doces Individuais.jpg';
-import combom from '../image/Combo de Festas.jpg';
+
 
 
 
@@ -212,6 +209,9 @@ const Products = () => {
               </button>
             </div>
           </div>
+
+
+
         ))}
       </div>
 

@@ -36,7 +36,7 @@ const Contato = () => {
               rel="noopener noreferrer" 
               aria-label="Twitter da Confeitaria"
             >
-              <img src={x} alt="Twitter" />
+              <img src={x} alt="X" />
               <p>X</p>
             </a>
           </div>

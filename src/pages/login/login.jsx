@@ -10,14 +10,32 @@ const Login = () => {
   const [isAdmin, setIsAdmin] = useState(false);
   const navigate = useNavigate();
 
+  const userExample = {
+    email: 'user@example.com',
+    password: 'senha123',
+    isAdmin: false
+  };
+
+  const adminExample = {
+    email: 'admin@example.com',
+    password: 'admin123',
+    isAdmin: true
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Login:', { email, password, isAdmin });
-    
     if (isAdmin) {
-      navigate('/ADM');
+      if (email === adminExample.email && password === adminExample.password) {
+        navigate('/ADM');
+      } else {
+        alert('Credenciais de admin inválidas!');
+      }
     } else {
-      alert('Acesso de usuário comum');
+      if (email === userExample.email && password === userExample.password) {
+        alert('Acesso de usuário comum');
+      } else {
+        alert('Credenciais de usuário inválidas!');
+      }
     }
   };
 
